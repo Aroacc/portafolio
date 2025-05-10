@@ -1,5 +1,5 @@
 import moonIcon from '../assets/luna.png'; 
-import '...index.css'; /
+import '...index.css'; 
 function Navbar({ darkMode, toggleDarkMode }) {
   return (
     <nav className={`navbar ${darkMode ? 'dark-mode' : ''}`}>
