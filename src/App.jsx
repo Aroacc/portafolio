@@ -55,8 +55,6 @@ function App() {
 
       {/* Contenido principal */}
         <Header />
-        <About />
-        <Projects />
         <Contact />
  
       {/* Pie de página */}
