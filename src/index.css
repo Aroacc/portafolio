@@ -32,7 +32,61 @@ a {
 }
 
 
-/* Barra de navegación */
+
+
+/* Estilos generales de la barra de navegación */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: #fff; 
+  transition: background-color 0.3s ease, color 0.3s ease; 
+}
+
+.navbar.dark-mode {
+  background-color: #333; 
+  color: #fff;
+}
+
+/* Estilo de los enlaces de la barra de navegación */
+.navbar-links h3 {
+  margin: 0;
+  padding: 0;
+}
+
+.navbar-links a {
+  margin: 0 30px;
+  text-decoration: none;
+  color: inherit; 
+  font-size: 1.1rem;
+  transition: color 0.3s ease;
+}
+
+.navbar-links a:hover {
+  color: #c2a6ff; 
+}
+
+
+/* Estilo del botón para alternar el modo oscuro */
+.mode-toggle {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 10px;
+}
+
+.mode-toggle img {
+  width: 30px;
+  height: 30px;
+  transition: transform 0.3s ease;
+}
+
+/* Efecto al pasar el mouse sobre el icono */
+.mode-toggle:hover img {
+  transform: scale(1.1); 
+}
+
 /* Mejora visual impactante del header */
 .header {
   height: 100vh;
@@ -127,7 +181,6 @@ a {
 }
 
 
-
 /* Estilos para el carrusel */
 .carousel-container {
   display: flex;
@@ -200,7 +253,6 @@ a {
 }
 
 
-/* Estilos de projects */
 /* Estilo general para la sección de proyectos */
 #proyectos {
   padding: 2rem;
@@ -217,14 +269,14 @@ a {
 /* Estilos para el contenedor de los proyectos */
 .projects {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Grilla responsiva */
-  gap: 1.5rem; /* Espaciado entre los elementos */
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); 
+  gap: 1.5rem; 
 }
 
 /* Estilos para cada tarjeta de proyecto */
 .project-card {
   background-color: #fff;
-  border: 1px solid #ddd; /* Borde sencillo */
+  border: 1px solid #ddd; 
   border-radius: 8px;
   overflow: hidden;
   padding: 2rem;
@@ -365,27 +417,13 @@ body.dark-mode footer {
 }
 
 .mode-toggle:hover {
-  background-color: #ff4081;
+  background-color: #c2a6ff;
 }
 
 .mode-toggle img {
   width: 30px;
   height: 30px;
 }
-
-
-
-/* ===== Responsive ===== */
-@media (max-width: 768px) {
-  header {
-    padding: 2rem;
-  }
-
-  .projects {
-    grid-template-columns: 1fr;
-  }
-}
-
 
 
 /* Estilo base para el contenedor de las estrellas */
