@@ -19,6 +19,9 @@ function Header() {
       <div className="header-text">
         <h1>Aroa Clavijo Caravante</h1>
         <h2 className="h1">Desarrolladora Frontend</h2>
+        <p className="intro-frase">
+    Creo interfaces atractivas, dinámicas y funcionales.
+  </p>
         <div className="tech-icons">
           <img src={htmlIcon} alt="HTML" />
           <img src={cssIcon} alt="CSS" />
