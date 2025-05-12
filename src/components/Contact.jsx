@@ -1,6 +1,6 @@
 import gmailIcon from '../assets/icons/gmail.png';
 import linkedinIcon from '../assets/icons/linkedin.png';
-import githubIcon from '../assets/icons/github.png'; // Asegúrate de tener este icono en la carpeta
+import githubIcon from '../assets/icons/github.png'; 
 
 function Contact() {
   return (
