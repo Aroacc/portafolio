@@ -1,4 +1,4 @@
-import moonIcon from '../assets/luna.png'; 
+import moonIcon from '../assets/luna.png';
 import '../index.css';
 
 function Navbar({ darkMode, toggleDarkMode }) {
@@ -6,11 +6,11 @@ function Navbar({ darkMode, toggleDarkMode }) {
     <nav className={`navbar ${darkMode ? 'dark-mode' : ''}`}>
       {/* Enlaces de navegación */}
       <div className="navbar-links">
-      <h3>
-        <a href="#inicio">Inicio</a>
-        <a href="#sobre-mi">Sobre mí</a>
-        <a href="#proyectos">Proyectos</a>
-        <a href="#contacto">Contacto</a>
+        <h3>
+          <a href="#inicio">Inicio</a>
+          <a href="#sobre-mi">Sobre mí</a>
+          <a href="#proyectos">Proyectos</a>
+          <a href="#contacto">Contacto</a>
         </h3>
       </div>
 

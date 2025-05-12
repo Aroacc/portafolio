@@ -52,9 +52,9 @@ function App() {
       <div className="star-container"></div>
 
       {/* Contenido principal */}
-        <Header />
-        <Contact />
- 
+      <Header />
+      <Contact />
+
       {/* Pie de página */}
       <footer>
         <p>&copy; 2025 Aroa Clavijo | Todos los derechos reservados</p>
@@ -64,6 +64,3 @@ function App() {
 }
 
 export default App;
-
-
-
