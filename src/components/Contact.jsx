@@ -7,12 +7,7 @@ function Contact() {
     <section id="contacto" className="contact-section">
       <h2>Contacto</h2>
       <div className="icon-links">
-        <a
-          href="mailto:aroaclavijo16@gmail.com"
-          target="_blank"
-          rel="noopener noreferrer"
-          title="Enviar email"
-        >
+        <a href="mailto:aroaclavijo16@gmail.com" target="_blank" rel="noopener noreferrer" title="Enviar email">
           <img src={gmailIcon} alt="Gmail" className="contact-icon" />
         </a>
         <a
@@ -23,12 +18,7 @@ function Contact() {
         >
           <img src={linkedinIcon} alt="LinkedIn" className="contact-icon" />
         </a>
-        <a
-          href="https://github.com/Aroacc"
-          target="_blank"
-          rel="noopener noreferrer"
-          title="Ver mi GitHub"
-        >
+        <a href="https://github.com/Aroacc" target="_blank" rel="noopener noreferrer" title="Ver mi GitHub">
           <img src={githubIcon} alt="GitHub" className="contact-icon" />
         </a>
       </div>
