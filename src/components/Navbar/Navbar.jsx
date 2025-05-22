@@ -1,5 +1,9 @@
-import moonIcon from '../assets/luna.png';
-import '../index.css';
+import moonIcon from '../../assets/luna.png';
+import '../../index.css';
+import './navbar.css';
+
+
+
 
 function Navbar({ darkMode, toggleDarkMode }) {
   return (

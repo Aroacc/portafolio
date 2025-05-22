@@ -1,5 +1,6 @@
-import imgDogs from '../assets/img-dog-app.png';
-import githubIcon from '../assets/icons/github.png';
+import imgDogs from '../../assets/img-dog-app.png';
+import githubIcon from '../../assets/icons/github.png';
+import './projects.css';
 
 function Projects() {
   return (
