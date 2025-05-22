@@ -1,0 +1,48 @@
+/* Estilos generales de la barra de navegación */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: #fff;
+  transition:
+    background-color 0.3s ease,
+    color 0.3s ease;
+}
+
+/* Estilo de los enlaces de la barra de navegación */
+.navbar-links h3 {
+  margin: 0;
+  padding: 0;
+}
+
+.navbar-links a {
+  margin: 0 30px;
+  text-decoration: none;
+  color: inherit;
+  font-size: 1.1rem;
+  transition: color 0.3s ease;
+}
+
+.navbar-links a:hover {
+  color: #c2a6ff;
+}
+
+/* Estilo del botón para alternar el modo oscuro */
+.mode-toggle {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 10px;
+}
+
+.mode-toggle img {
+  width: 30px;
+  height: 30px;
+  transition: transform 0.3s ease;
+}
+
+/* Efecto al pasar el mouse sobre el icono */
+.mode-toggle:hover img {
+  transform: scale(1.1);
+}
