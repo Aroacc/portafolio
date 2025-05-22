@@ -1,14 +1,14 @@
 import React, { useState } from 'react';
-import htmlIcon from '../assets/icons/html.png';
-import cssIcon from '../assets/icons/css.png';
-import jsIcon from '../assets/icons/js.png';
-import reactIcon from '../assets/icons/react.png';
-import gitIcon from '../assets/icons/git.png';
-import gitlabIcon from '../assets/icons/gitlab.png';
-import nodeIcon from '../assets/icons/node.png';
-import About from './About';
-import Projects from './Projects';
-import '../index.css';
+import htmlIcon from '../../assets/icons/html.png';
+import cssIcon from '../../assets/icons/css.png';
+import jsIcon from '../../assets/icons/js.png';
+import reactIcon from '../../assets/icons/react.png';
+import gitIcon from '../../assets/icons/git.png';
+import gitlabIcon from '../../assets/icons/gitlab.png';
+import nodeIcon from '../../assets/icons/node.png';
+import About from '../About/About';
+import Projects from '../Projects/Projects';
+import './header.css';
 
 function Header() {
   const [currentSlide, setCurrentSlide] = useState(0);
