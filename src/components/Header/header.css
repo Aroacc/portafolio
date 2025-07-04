@@ -8,20 +8,6 @@
   text-align: center;
   overflow: hidden;
   padding: 5rem;
-  background: linear-gradient(270deg, #e0cfff, #f7eaff, #c2a6ff);
-  background-size: 600% 600%;
-  animation: gradientMove 20s ease infinite;
-}
-@keyframes gradientMove {
-  0% {
-    background-position: 0% 50%;
-  }
-  50% {
-    background-position: 100% 50%;
-  }
-  100% {
-    background-position: 0% 50%;
-  }
 }
 
 .header-content {
