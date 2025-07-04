@@ -1,5 +1,3 @@
-import imgDogs from '../../assets/img-dog-app.png';
-import githubIcon from '../../assets/icons/github.png';
 import './projects.css';
 
 function Projects() {
@@ -7,21 +5,37 @@ function Projects() {
     <section id="proyectos">
       <h2>Proyectos</h2>
       <div className="projects">
-        <div className="project-card">
-          <h3>dog-breed-finder</h3>
-          <a href="https://dog-breed-finder-blond.vercel.app/" target="_blank" rel="noopener noreferrer">
-            <img src={imgDogs} alt="dog-breed-finder" className="project-image" />
-          </a>
-
-          <div>
-            <a href="https://github.com/Aroacc/dog-breed-finder" target="_blank" rel="noopener noreferrer">
-              <img src={githubIcon} alt="GitHub" className="contact-icon" />
-            </a>
-          </div>
-          <p>Aplicación web de buscador de razas de perros en la que te muestra imágenes de cada raza seleccionada.</p>
+    {[
+      {
+        title: 'Buscador razas de perros',
+        description: 'App web para organizar tareas diarias con React y Firebase.',
+        image: '/src/assets/img-dog-app.png',
+        link: 'https://tu-link.com',
+        tech: ['React', 'Firebase', 'CSS Modules'],
+      },
+      {
+        title: 'Atresplayer',
+        description: 'Interfaz tipo Netflix usando API de películas y diseño responsivo.',
+        image: '/src/assets/atresplayer.webp',
+        link: 'https://tu-link.com',
+        tech: ['HTML', 'CSS', 'JS', 'API'],
+      },
+      // Puedes mapear más proyectos desde un array real si lo deseas
+    ].map((project, index) => (
+      <div className="project-card" key={index}>
+        <img src={project.image} alt={project.title} className="project-image" />
+        <h3>{project.title}</h3>
+        <p>{project.description}</p>
+        <div className="tech-tags">
+          {project.tech.map((t, i) => (
+            <span key={i} className="tech-tag">{t}</span>
+          ))}
         </div>
+        <a href={project.link} target="_blank" rel="noreferrer" className="project-button">Ver proyecto</a>
       </div>
-    </section>
+    ))}
+  </div>
+</section>
   );
 }
 

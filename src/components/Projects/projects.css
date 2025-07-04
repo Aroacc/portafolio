@@ -1,56 +1,124 @@
-/* Estilo general para la sección de proyectos */
 #proyectos {
-  padding: 2rem;
-  max-width: 1200px;
-  margin: 0 auto;
+  padding: 6rem 2rem;
+  max-width: 1400px;
+  margin: auto;
+  text-align: center;
 }
 
 #proyectos h2 {
-  text-align: center;
-  font-size: 2rem;
-  margin-bottom: 2rem;
+  font-size: 3rem;
+  color: #bfa8ff;
+  font-family: 'Anton', sans-serif;
+  margin-bottom: 4rem;
+  background: linear-gradient(to right, #bfa8ff, #ff6fcb);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
-/* Estilos para el contenedor de los proyectos */
+/* Contenedor responsivo */
 .projects {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 1.5rem;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 3rem;
+  padding: 0 1rem;
 }
 
-/* Estilos para cada tarjeta de proyecto */
+/* Tarjetas tipo glass */
 .project-card {
-  background-color: #fff;
-  border: 1px solid #ddd;
-  border-radius: 8px;
-  overflow: hidden;
+  background: rgba(255, 255, 255, 0.85);
+  border-radius: 20px;
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.1);
   padding: 2rem;
+  backdrop-filter: blur(10px);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  position: relative;
+  overflow: hidden;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  height: 100%;
+  align-items: flex-start;
 }
 
-.project-card a {
-  text-decoration: none;
-  color: inherit;
+.project-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 20px 60px rgba(191, 168, 255, 0.3);
 }
 
-.project-card img.project-image {
+.project-image {
   width: 100%;
+  border-radius: 15px;
+  margin-bottom: 1.5rem;
   object-fit: cover;
-  border-radius: 4px;
-  margin-bottom: 1rem;
+  height: 180px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
 }
 
 .project-card h3 {
-  font-size: 1.25rem;
-  margin-bottom: 0.5rem;
-  text-align: center;
+  font-size: 1.6rem;
+  color: #333;
+  margin-bottom: 0.8rem;
 }
 
 .project-card p {
   font-size: 1rem;
   color: #555;
-  text-align: center;
+  line-height: 1.5;
+  margin-bottom: 1rem;
+}
+
+.project-card h3 {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  text-align: left;
+  background: linear-gradient(to right, #bfa8ff, #ff6fcb,  #bfa8ff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: shine 5s linear infinite;
+  background-size: 200% auto;
+  display: inline-block;
+}
+
+@keyframes shine {
+  0% {
+    background-position: 0% center;
+  }
+  100% {
+    background-position: -200% center;
+  }
+}
+
+/* Etiquetas de tecnologías */
+.tech-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.tech-tag {
+  background-color: #e6deff;
+  color: #6b4eff;
+  padding: 0.3rem 0.7rem;
+  border-radius: 30px;
+  font-size: 0.8rem;
+  font-weight: 500;
+}
+
+/* Botón elegante */
+.project-button {
+  margin-top: auto;
+  padding: 0.6rem 1.4rem;
+  background: linear-gradient(90deg, #bfa8ff, #ff6fcb);
+  color: white;
+  font-weight: bold;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  text-decoration: none;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.project-button:hover {
+  background: linear-gradient(90deg, #a182f0, #fa4fa4);
+  transform: scale(1.05);
 }
