@@ -3,8 +3,6 @@ import Header from './components/Header/Header';
 import Contact from './components/Contact/Contact';
 import Navbar from './components/Navbar/Navbar';
 import './components/footer/footer.css';
-import './components/About/About.css';
-import './components/Projects/Projects.css';
 
 function App() {
   const [darkMode, setDarkMode] = useState(false);
