@@ -1,0 +1,17 @@
+footer {
+  background-color: #ffffff;
+  color: #333;
+  padding: 1rem 0;
+  text-align: center;
+}
+
+footer a {
+  margin: 0 10px;
+  color: #00aaff;
+}
+
+/* Modo oscuro */
+body.dark-mode footer {
+  background-color: #333;
+  color: #fff;
+}

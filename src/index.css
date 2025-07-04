@@ -30,18 +30,6 @@ a {
   text-decoration: none;
 }
 
-/* Estilos del footer */
-footer {
-  background-color: #ffffff;
-  color: #333;
-  padding: 1rem 0;
-  text-align: center;
-}
-
-footer a {
-  margin: 0 10px;
-  color: #00aaff;
-}
 
 /* ESTILOS MODO OSCURO */
 body.dark-mode {
@@ -89,10 +77,6 @@ body.dark-mode .project-card {
   background-color: #333;
 }
 
-body.dark-mode footer {
-  background-color: #333;
-  color: #fff;
-}
 
 /* Botón modo oscuro */
 .mode-toggle {
@@ -116,43 +100,3 @@ body.dark-mode footer {
   height: 30px;
 }
 
-/* Estilo base para el contenedor de las estrellas */
-.star-container {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100vw;
-  height: 100vh;
-  pointer-events: none; /* Para que las estrellas no interfieran con los clics */
-  z-index: 999;
-  overflow: hidden;
-}
-
-/* Estilo de las estrellas */
-.star {
-  position: absolute;
-  width: 8px;
-  height: 8px;
-  border-radius: 50%;
-  background: rgba(255, 255, 255, 0.8);
-  opacity: 1;
-  animation: moveStar 2s linear infinite;
-  box-shadow: 0 0 6px rgba(255, 255, 255, 0.8); /* Efecto de brillo */
-}
-
-/* Animación de movimiento de las estrellas */
-@keyframes moveStar {
-  0% {
-    transform: translateX(0) translateY(0);
-    opacity: 1;
-  }
-  100% {
-    transform: translateX(500px) translateY(500px);
-    opacity: 0;
-  }
-}
-
-/* Modo oscuro - ajustamos las estrellas para que sean más visibles */
-body.dark-mode .star {
-  background: rgba(255, 255, 255, 1);
-}
