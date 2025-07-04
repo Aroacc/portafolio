@@ -3,6 +3,7 @@ import Header from './components/Header/Header';
 import Contact from './components/Contact/Contact';
 import Navbar from './components/Navbar/Navbar';
 import './components/footer/footer.css';
+import Projects from './components/Projects/Projects';
 
 function App() {
   const [darkMode, setDarkMode] = useState(false);
@@ -22,6 +23,7 @@ function App() {
 
       {/* Contenido principal */}
       <Header />
+      <Projects />
       <Contact />
 
       {/* Pie de página */}

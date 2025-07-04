@@ -7,7 +7,6 @@ import gitIcon from '../../assets/icons/git.png';
 import gitlabIcon from '../../assets/icons/gitlab.png';
 import nodeIcon from '../../assets/icons/node.png';
 import About from '../About/About';
-import Projects from '../Projects/Projects';
 import './header.css';
 
 function Header() {
@@ -38,7 +37,6 @@ function Header() {
   const slides = [
     presentacion,
     <About />,
-    <Projects />,
    
   ];
 

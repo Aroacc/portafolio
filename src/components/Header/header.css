@@ -8,27 +8,13 @@
   text-align: center;
   overflow: hidden;
   padding: 5rem;
-background: linear-gradient(270deg, #e0cfff, #f7eaff, #c2a6ff);
-  background-size: 600% 600%;
-  animation: gradientMove 20s ease infinite;
-}
-@keyframes gradientMove {
-  0% {
-    background-position: 0% 50%;
-  }
-  50% {
-    background-position: 100% 50%;
-  }
-  100% {
-    background-position: 0% 50%;
-  }
 }
 
 .header-content {
-  max-width: 800px;
+  max-width: 1150px;
   background-color: rgba(255, 255, 255, 0.85);
-  padding: 2rem;
-  border-radius: 20px;
+  padding: 4rem;
+  border-radius: 50px;
   box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
   animation: fadeInUp 1s ease-out;
 }

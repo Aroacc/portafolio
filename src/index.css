@@ -5,6 +5,20 @@ body {
   background-color: #f5f5f5;
   color: #333;
   background: linear-gradient(180deg, #f5f5f5 0%, #f7f2ff 100%);
+  background: linear-gradient(270deg, #e0cfff, #f7eaff, #c2a6ff);
+  background-size: 600% 600%;
+  animation: gradientMove 20s ease infinite;
+}
+@keyframes gradientMove {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }
 
 h1,
