@@ -13,32 +13,34 @@ function Header() {
   const [currentSlide, setCurrentSlide] = useState(0);
 
   const presentacion = (
-    <div className="slide-content">
-      <img src="/foto-aroa.jpg" alt="Foto de Aroa" className="photo" />
-      <div className="header-text">
-        <h1>Aroa Clavijo Caravante</h1>
-        <h2 className="h1">Desarrolladora Frontend</h2>
-        <p className="intro-frase">
-    Creo interfaces atractivas, dinámicas y funcionales.
-  </p>
-        <div className="tech-icons">
-          <img src={htmlIcon} alt="HTML" />
-          <img src={cssIcon} alt="CSS" />
-          <img src={jsIcon} alt="JavaScript" />
-          <img src={reactIcon} alt="React" />
-          <img src={gitIcon} alt="Git" />
-          <img src={gitlabIcon} alt="GitLab" />
-          <img src={nodeIcon} alt="Node.js" />
+    <div className="slide-content grid-layout">
+      <div className="text-section">
+        <div className="header-text">
+          <h1 className="saludo">¡Hola!</h1>
+          <h2 className="nombre">Soy Aroa Clavijo Caravante</h2>
+          <h2>Desarrolladora Frontend</h2>
+          <p className="intro-frase">
+            Creo interfaces atractivas, dinámicas y funcionales.
+          </p>
+          <div className="tech-icons" aria-label="Tecnologías que uso">
+  <div className="slider">
+    {[htmlIcon, cssIcon, jsIcon, reactIcon, gitIcon, gitlabIcon, nodeIcon].map((icon, i) => (
+      <img key={`icon1-${i}`} src={icon} alt="" />
+    ))}
+    {[htmlIcon, cssIcon, jsIcon, reactIcon, gitIcon, gitlabIcon, nodeIcon].map((icon, i) => (
+      <img key={`icon2-${i}`} src={icon} alt="" />
+    ))}
+  </div>
+</div>
         </div>
       </div>
+      {/* <div className="photo-section">
+        <img src="/foto-aroa.jpg" alt="Foto de Aroa" className="photo" />
+      </div> */}
     </div>
   );
 
-  const slides = [
-    presentacion,
-    <About />,
-   
-  ];
+  const slides = [presentacion, <About />];
 
   const nextSlide = () => {
     setCurrentSlide((prev) => (prev + 1) % slides.length);
@@ -51,20 +53,20 @@ function Header() {
   return (
     <header className="header" id="inicio">
       <div className="header-content">
-        <button className="carousel-btn prev-btn" onClick={prevSlide}>‹</button>
+        <button className="carousel-btn prev-btn" onClick={prevSlide} aria-label="Anterior">‹</button>
         <div className="carousel-wrapper">
-  <div
-    className="carousel-track"
-    style={{ transform: `translateX(-${currentSlide * 100}%)` }}
-  >
-    {slides.map((slide, index) => (
-      <div className="carousel-slide" key={index}>
-        {slide}
-      </div>
-    ))}
-  </div>
-</div>
-        <button className="carousel-btn next-btn" onClick={nextSlide}>›</button>
+          <div
+            className="carousel-track"
+            style={{ transform: `translateX(-${currentSlide * 100}%)` }}
+          >
+            {slides.map((slide, index) => (
+              <div className="carousel-slide" key={index}>
+                {slide}
+              </div>
+            ))}
+          </div>
+        </div>
+        <button className="carousel-btn next-btn" onClick={nextSlide} aria-label="Siguiente">›</button>
       </div>
     </header>
   );

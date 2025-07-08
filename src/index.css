@@ -1,3 +1,25 @@
+.contact-floating {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: linear-gradient(135deg, #bfa8ff, #ff6fcb);
+  color: white;
+  font-family: 'Anton', sans-serif;
+  font-size: 1.2rem;
+  padding: 0.8rem 1.4rem;
+  border-radius: 30px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  text-decoration: none;
+  z-index: 999;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.contact-floating:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+}
+
+
 /* ESTILOS MODO CLARO*/
 body {
   margin: 0;

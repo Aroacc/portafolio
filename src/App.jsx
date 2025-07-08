@@ -23,6 +23,9 @@ function App() {
       <Navbar darkMode={darkMode} toggleDarkMode={toggleDarkMode} />
 
       {/* Contenido principal */}
+      <a href="#contacto" className="contact-floating">
+  📬 Contáctame aquí
+</a>
       <Header />
       <Projects />
       <Contact />
