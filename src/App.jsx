@@ -4,7 +4,7 @@ import Contact from './components/Contact/Contact';
 import Navbar from './components/Navbar/Navbar';
 import './components/footer/footer.css';
 import Projects from './components/Projects/Projects';
-import './components/About/about.css';
+// import './components/About/about.css';
 
 function App() {
   const [darkMode, setDarkMode] = useState(false);
