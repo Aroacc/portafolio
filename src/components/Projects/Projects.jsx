@@ -1,4 +1,6 @@
 import './projects.css';
+import unaImage from '/src/assets/img-dog-app.png'
+import dosImage from '/src/assets/atresplayer.webp';
 
 function Projects() {
   return (
@@ -9,14 +11,14 @@ function Projects() {
       {
         title: 'Buscador razas de perros',
         description: 'App web para organizar tareas diarias con React y Firebase.',
-        image: '/src/assets/img-dog-app.png',
+        image: unaImage,
         link: 'https://tu-link.com',
         tech: ['React', 'Firebase', 'CSS Modules'],
       },
       {
         title: 'Atresplayer',
         description: 'Interfaz tipo Netflix usando API de películas y diseño responsivo.',
-        image: '/src/assets/atresplayer.webp',
+        image: dosImage,
         link: 'https://tu-link.com',
         tech: ['HTML', 'CSS', 'JS', 'API'],
       },
