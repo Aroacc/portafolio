@@ -17,6 +17,8 @@ function App() {
     document.body.classList.toggle('dark-mode', darkMode);
   }, [darkMode]);
 
+  console.log('tiene')
+
   return (
     <div className={darkMode ? 'dark-mode' : ''}>
       {/* Barra de navegación */}
